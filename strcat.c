@@ -4,7 +4,9 @@
 
 int main()
 {
-    char a[100] = "hello,";
+    char a[100] = "hello,9999999999999999";
+	a[3] = 0;
+	printf("len(a) is %d\n",strlen(a));
     char b[100] = "zhangbing";
     strcat(a,b);
     printf("%s\n",a);
